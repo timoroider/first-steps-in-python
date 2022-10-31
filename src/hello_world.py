@@ -31,3 +31,28 @@ sentence = "%s is %d years old"
 print(sentence % ("Obama", 50))
 
 print("***********************************************")
+
+
+# ------------------------------------------------------------------------------
+# LISTS
+# ------------------------------------------------------------------------------
+
+shop_list = ["Apples","Oranges","Bananas","Cheese"]
+print (shop_list[0])
+
+shop_list.append("Blueberries")
+print (shop_list[0:5])
+
+shop_list[0] = "Cherries"
+print (shop_list)
+
+shop_list.remove("Cherries")
+print (shop_list)
+
+print (len(shop_list))
+
+print (shop_list*20)
+
+# ------------------------------------------------------------------------------
+# TITLE
+# ------------------------------------------------------------------------------
