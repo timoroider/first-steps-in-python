@@ -11,35 +11,64 @@ name = input("What is your name? \n")
 
 # Lock out Ben
 if name == "Ben":
-    print("You're not welcome here evil Ben!! Get out!!")
+    answer = input("Are you evil?")
+    if answer == "yes":
+        print("Get out evil Ben! ")
+        exit()
+    if answer == "no":
+        print("You are special!")
+        print("")
+
+
+print("Hello " + name + " , thank you so much for coming in today!")
+
+# Price
+price_food = 11
+
+# Order Food
+print("""Food:
+Pizza 
+Salad
+Burger""")
+
+food = input("What do you want to eat? \n")
+
+# Order beverage
+print("""beverages: 
+Coffee
+Cola
+Sirup
+Bilz""")
+
+drink = input("What do you want to drink? \n")
+
+price_beverages = 4
+
+
+if drink == "Coffee":
+    price_beverages = 3
+
+elif drink == "Cola":
+    coke_style = input("Zero or good coke?")
+    if coke_style == "Zero":
+        price_beverages += 2
+
+elif drink == "Sirup":
+    price_beverages = 2
+
+elif drink == "Bilz":
+    price_beverages = 9
 else:
-    print("Hello " + name + " , thank you so much for coming in today!")
+    print("Sorry, we don't have that here. Please leave now evil Ben!")
+    exit()
 
-    # Price
-    price_food = 50
-    price_beverages = 4
 
-    # Order Food
-    print("""Food:
-    Pizza 
-    Salad
-    Burger""")
+count_beverage = int(input("How many " + drink + "s would you like to order?"))
 
-    food = input("What do you want to eat? \n")
+# Summarize order
+print("Ok " + name + " your " + food + " and your " +
+      str(count_beverage) + " " + drink + "s will be ready in a few minutes")
 
-    # Order beverage
-    print("""beverages:
-    Coffe
-    Cola
-    Sirup""")
+price = count_beverage * price_beverages + price_food
 
-    drink = input("What do you want to drink? \n")
-
-    count_beverage = int(input("How many " + drink + "s would you like to order?"))
-
-    # Summarize order
-    print("Ok " + name + " your " + food + " and your " + str(count_beverage) + " " + drink + "s will be ready in a few minutes")
-
-    price = count_beverage * price_beverages + price_food
-
-    print("That would be $" + str(price) + " please")
+print("That would be $" + str(price) + " please")
