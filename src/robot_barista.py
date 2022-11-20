@@ -8,13 +8,14 @@ print("Hello, welcome to NetworkChuckCoffe!")
 # Get name and greet
 name = input("What is your name? \n")
 
-
-# Lock out Ben
-if name == "Ben":
+# Lock out Ben or Patricia
+if name == "Ben" or name == "Patricia" or name == "Loki":
     answer = input("Are you evil?")
     if answer == "yes":
-        print("Get out evil Ben! ")
-        exit()
+        deeds = input("How many good deeds have you done today?")
+        if int(deeds) <= 4:
+            print("Get out evil " + name + "! ")
+            exit()
     if answer == "no":
         print("You are special!")
         print("")
