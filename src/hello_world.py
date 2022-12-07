@@ -57,7 +57,18 @@ print(len(shop_list))
 
 shop_list.insert(-3, "Bidon")
 
+
+# shop_list.clear()
+
+# print("--------------------------------------------------------------------")
+
+# shop_list.remove("Bananas")
+
+print(shop_list.pop(0))
+
 print(shop_list*2)
+
+# shop_list.append
 
 # ------------------------------------------------------------------------------
 # EXCERCISES FROM https://www.youtube.com/watch?v=mRMmlo_Uqcs&ab_channel=NetworkChuck
@@ -65,10 +76,10 @@ print(shop_list*2)
 
 # Multiline string
 
-print("""I am Iron Man.
-No, I am Tony Stark""")
+# print("""I am Iron Man.*
+# No, I am Tony Stark""")
 
 
 # String concatenation
 
-print("I am Iron Man. \n" + "No, I am  Tony Stark")
+# print("I am Iron Man. \n" + "No, I am  Tony Stark")
